@@ -31,32 +31,35 @@
 
           <fieldset class="promise-state-fieldset">
             <legend class="promise-state-legend">State</legend>
-            <label class="promise-state-label-fulfilled">
-              <input
-                class="promise-state-input-fulfilled"
-                type="radio"
-                name="state"
-                value="fulfilled"
-                required
-              />
-              Fulfilled
-            </label>
-            <label class="promise-state-label-rejected">
-              <input
-                class="promise-state-input-rejected"
-                type="radio"
-                name="state"
-                value="rejected"
-                required
-              />
-              Rejected
-            </label>
+            <div class="promise-state-wrapper">
+              <label class="promise-state-label-fulfilled">
+                <input
+                  class="promise-state-input-fulfilled"
+                  type="radio"
+                  name="state"
+                  value="fulfilled"
+                  required
+                />
+                Fulfilled
+              </label>
+              <label class="promise-state-label-rejected">
+                <input
+                  class="promise-state-input-rejected"
+                  type="radio"
+                  name="state"
+                  value="rejected"
+                  required
+                />
+                Rejected
+              </label>
+            </div>
           </fieldset>
 
           <button class="promise-btn" type="submit">Create notification</button>
         </form>
       </div>
     </main>
+    <!-- <script src="iziToast.min.js" type="text/javascript"></script> -->
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>
