@@ -15,28 +15,29 @@ function myPromise(event) {
     setTimeout(() => {
       const delayValue = parseInt(delay.value);
       if (fulfilledInput.checked) {
-        resolve(`Fulfilled promise in ${delayValue}ms`);
+        resolve(delayValue);
       } else if (rejectedInput.checked) {
-        reject(`Rejected promise in ${delayValue}ms`);
+        reject(delayValue);
       }
     }, delay.value);
   });
   promise
-    .then(result => {
-      console.log(result);
+    .then(delayValue => {
+      console.log(`Promise fulfilled after ${delayValue}ms`);
       iziToast.success({
         title: 'OK',
-        message: result,
+        message: `Promise fulfilled after ${delayValue}ms`,
         position: 'topRight',
         iconText: '✅',
       });
     })
-    .catch(error => {
-      console.log(error);
+    .catch(delayValue => {
+      console.log(`Promise rejected after ${delayValue}ms`);
       iziToast.error({
         title: 'Error',
-        message: error,
+        message: `Promise rejected after ${delayValue}ms`,
         position: 'topRight',
+        icon: '❌',
         iconText: '❌',
       });
     });

@@ -61,6 +61,8 @@ function addLeadingZero(value) {
   return String(value).padStart(2, '0');
 }
 
+button.disabled = true;
+
 button.addEventListener('click', () => {
   // Перевірка, чи дата вибрана та в майбутньому
   if (!userSelectedDate || userSelectedDate < new Date()) {
@@ -112,7 +114,6 @@ button.addEventListener('click', () => {
       remainingTime.seconds === 0
     ) {
       clearInterval(intervalId); // зупиняємо таймер
-      button.disabled = false;
       input.disabled = false;
     }
   }, 1000);
