@@ -1,0 +1,120 @@
+.back-link {
+  margin-bottom: 8px;
+}
+.timer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  gap: 8px;
+
+  margin-bottom: 32px;
+}
+.timer-input {
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  margin-right: 8px;
+  background-color: #fff;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+}
+.timer-input:hover {
+  border: 1px solid #000;
+}
+.timer-input:active {
+  border: 1px solid #4e75ff;
+}
+.timer-button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+
+  background-color: #4e75ff;
+  color: #fff;
+
+  box-sizing: border-box;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.timer-button:hover {
+  background-color: #6c8cff;
+  color: #fff;
+}
+.timer-button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: none;
+}
+.timer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+
+  width: 346px;
+  height: 72px;
+}
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+
+  width: 55px;
+  height: 72px;
+}
+.timer .value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.timer-running .field .value {
+  font-size: 40px !important;
+  color: #2e2f42;
+}
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.flatpickr-day {
+  border-radius: 50%;
+  color: #666;
+}
+
+.flatpickr-day:hover {
+  background-color: #c1c1c1;
+}
+
+.flatpickr-day.selected {
+  background-color: #4e75ff;
+  color: #fff;
+}
+
+.flatpickr-day.today {
+  border: 1px solid #4e75ff !important;
+}
