@@ -38,6 +38,7 @@ function myPromise(event) {
         message: `Promise rejected after ${delayValue}ms`,
         position: 'topRight',
         icon: '❌',
+
         iconText: '❌',
       });
     });
